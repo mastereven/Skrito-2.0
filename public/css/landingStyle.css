@@ -171,14 +171,16 @@ body {
     max-width: 1045px;
     /* 1100px * 0.95 */
     width: 100%;
+    height: 100%;
     padding: 9.5px;
     /* 10px * 0.95 */
 }
 
 /* Image alignée à gauche */
+/* Image alignée à gauche */
 .secondSection img {
-    width: 453.15px;
-    /* 477px * 0.95 */
+    flex-basis: 0;
+    flex-grow: 1;
     height: 430.35px;
     /* 453px * 0.95 */
     border-radius: 49.4px;
@@ -205,6 +207,13 @@ body {
     /* 72px * 0.95 */
     margin-bottom: 19px;
     /* 20px * 0.95 */
+}
+
+.onlytexttitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Adaptation pour les petits écrans */

@@ -23,15 +23,19 @@ ob_start();
 
                 </div>
                 <div class="LandingInsideSecondContainer">
-                        <h1 class="titleSecondContainers">
-                                <span class="blueText">Rejoins </span><span class="redText">nous !</span>
-                        </h1>
+
                         <div class="secondSection">
                                 <img src="public/image/landing_page_secondDivBox_background.png" alt="Apprendre le dessin en ligne">
-                                <p class="textSecondContainers">
-                                        Grâce à <span class="RedText">l'outil de création de tutoriels </span>
-                                        <span class="blueText">SKRITO</span>, tu<br> peux <span class="blueText">mettre en ligne tes projets </span>et permettre aux <br>autres utilisateurs <span class="RedText">d'adopter ton style.</span>
-                                </p>
+                                <div class="onlytexttitle">
+                                        <h1 class="titleSecondContainers">
+                                                <span class="blueText">Rejoins </span><span class="redText">nous !</span>
+                                        </h1>
+                                        <p class="textSecondContainers">
+                                                Grâce à <span class="RedText">l'outil de création de tutoriels </span>
+                                                <span class="blueText">SKRITO</span>, tu<br> peux <span class="blueText">mettre en ligne tes projets </span>et permettre aux <br>autres utilisateurs <span class="RedText">d'adopter ton style.</span>
+                                        </p>
+                                </div>
+
                         </div>
                 </div>
         </div>
