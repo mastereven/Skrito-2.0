@@ -1,4 +1,5 @@
 <?php
+require_once 'models/Skritter_models.php';
 function skritoLanding()
 { // function to display the landing page
     $title = 'SKRITO';
