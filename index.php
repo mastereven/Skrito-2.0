@@ -1,5 +1,7 @@
 <?php
-require_once 'controllers/Front_End/skritter_Controller.php';
+
+// Ensure the required file is included
+require_once 'controllers/Front_End/skritoLanding_Controller.php';
 
 if (isset($_GET['action'])) {
     if ($_GET['action'] === 'logIn') {
@@ -10,5 +12,11 @@ if (isset($_GET['action'])) {
         }
     }
 } else {
-    skritoLanding();
+    // Call skritoLanding() if 'action' parameter is not set
+    if (function_exists('skritoLanding')) {
+        skritoLanding();
+    } else {
+        // Handle the case where skritoLanding() is not defined
+        echo "Error: skritoLanding function is not defined.";
+    }
 }
