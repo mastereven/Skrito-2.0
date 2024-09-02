@@ -10,8 +10,8 @@ ob_start();
             <a href="index.php"><img src="././public/image/Nav_Logo.png" alt="Apprendre le dessin en ligne avec SKRITO"></a>
         </div>
         <ul class="navbar-buttons">
-            <a href="index.php?action=logIn" class="button-connexion">Inscription</a>
-            <a href="index.php?action=auth" class="button-auth">connexion</a>
+            <a href="index.php?action=auth" class="button-connexion">Inscription</a>
+            <a href="index.php?action=logIn" class="button-auth">connexion</a>
         </ul>
     </nav>
 </header>
