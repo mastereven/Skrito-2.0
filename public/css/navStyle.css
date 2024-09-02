@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2c2c2c;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button-connexion,
+.button-auth {
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.button-connexion {
+    background-color: rgb(255, 216, 194);
+    color: black
+}
+
+.button-auth {
+    background-color: rgb(185, 238, 255);
+    color: rgb(0, 0, 0);
+}
+
+.button-connexion:hover {
+    background-color: rgb(182, 154, 138);
+    color: rgb(255, 255, 255);
+}
+
+.button-auth:hover {
+    background-color: rgb(127, 167, 180);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-right: 20%;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+        background-color: #2c2c2c00;
+    }
+
+    .navbar-buttons {
+        display: none;
+
+    }
+}

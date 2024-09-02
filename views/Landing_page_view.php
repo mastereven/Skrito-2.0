@@ -1,10 +1,8 @@
 <?php
 ob_start();
 ?>
-
 <!-- Contenu de la page -->
-
-<body id="landingPage">
+<main class="landingPage">
         <div class="landingMainContainers">
                 <div class="LandingInsideMainContainer">
                         <div class="textSection">
@@ -41,8 +39,8 @@ ob_start();
 
 
         </div>
-</body>
 
+</main>
 <?php
 $content = ob_get_clean();
 require('Template_view.php');

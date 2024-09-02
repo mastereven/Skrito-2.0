@@ -4,8 +4,9 @@ function skritoLanding()
 { // function to display the landing page
     $title = 'SKRITO';
     $policeFiles = ['https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap'];
-    $cssFiles = ['public\css\formatPage.css', 'public\css\landingStyle.css'];
-    $jsFiles = ['script.js', 'functions.js'];
+    $cssFiles = ['public\css\formatPage.css', 'public\css\navStyle.css', 'public\css\landingStyle.css',];
+    $jsFiles = [''];
+    require_once 'views/nav_view.php';
     require_once 'views/Landing_page_view.php';
 }
 function skrittersLogInPage()
