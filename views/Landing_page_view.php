@@ -25,7 +25,7 @@ ob_start();
                 <div class="LandingInsideSecondContainer">
 
                         <div class="secondSection">
-                                <img src="public/image/landing_page_secondDivBox_background.png" alt="Apprendre le dessin en ligne">
+                                <img src="public/image/landing_page_SecondDivBoxBg.png" alt="Apprendre le dessin en ligne">
                                 <div class="onlytexttitle">
                                         <h1 class="titleSecondContainers">
                                                 <span class="blueText">Rejoins </span><span class="redText">nous !</span>
