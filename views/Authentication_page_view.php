@@ -15,8 +15,8 @@ ob_start();
         <label for="prenom">Prénom :</label>
         <input type="text" id="firstName" name="firstName" required><br><br>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="mail">Email :</label>
+        <input type="mail" id="mail" name="mail" required><br><br>
 
         <label for="pseudo">Pseudo :</label>
         <input type="text" id="pseudo" name="pseudo" required><br><br>

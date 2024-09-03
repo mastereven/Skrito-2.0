@@ -15,20 +15,34 @@ function skritoGetPost()
     require_once 'models/Skrito_db_Model.php';
     require_once 'models/Skritter_models.php';
 
+    // Récupération des données propres
     $cleanData = skritoGetCleanPost();
+    var_dump($cleanData); // Debug : Affiche les données nettoyées
 
     try {
         skritoInsertPost($cleanData);
         skritoSuccessRedirect();
     } catch (Exception $e) {
         $errorMessage = $e->getMessage();
+        var_dump($errorMessage); // Debug : Affiche le message d'erreur si une exception est levée lors de l'insertion
+        skrittersAuthInPage($errorMessage);
+    }
+
+    try {
+        skritoVerifMail($cleanData['email']);
+        var_dump($cleanData['email']); // Debug : Affiche l'email utilisé pour la vérification
+        var_dump($result); // Debug : Affiche le résultat de la vérification de l'email (variable $result doit être définie dans skritoVerifEmail)
+    } catch (Exception $e) {
+        $errorMessage = $e->getMessage();
+        var_dump($errorMessage); // Debug : Affiche le message d'erreur si une exception est levée lors de la vérification de l'email
         skrittersAuthInPage($errorMessage);
     }
 }
 
+
 function skritoSuccessRedirect()
 {
-    header('Location: success_page.php');
+    header('Location: index.php?action=successSkritter');
     exit();
 }
 

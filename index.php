@@ -5,20 +5,17 @@ require_once 'controllers/Front_End/Skritter_Controller.php';
 
 if (isset($_GET['action'])) {
     if ($_GET['action'] === 'auth') {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            if (isset($_POST['action']) && $_POST['action'] === 'newSkritter') {
-                skritoGetPost();
-            } else {
-                skrittersAuthInPage();
-            }
-        } else {
-            skrittersAuthInPage();
-        }
-    } elseif ($_GET['action'] === 'success') {
+        // function to display the authentication page
+        skrittersAuthInPage();
+    } elseif ($_GET['action'] === 'successSkritter') {
         skritoSuccessPage();
+    } elseif ($_GET['action'] === 'logIn') {
+        // function to display the login page
+        skrittersLogInPage();
+    } elseif ($_GET['action'] === 'newSkritter') {
+        // function to get and insert the post data
+        skritoGetPost();
     } else {
         skritoLanding();
     }
-} else {
-    skritoLanding();
 }
