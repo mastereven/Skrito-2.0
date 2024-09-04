@@ -2,7 +2,7 @@
 ob_start();
 ?>
 <div class="container">
-    <a href="index.php?action=landing">
+    <a href="index.php?action=Landing">
         <img src="public/image/Conn_logo.png" alt="Skrito plateforme communautaire de dessin" class="logo">
     </a>
     <h1 id="connTitle">Rebonjour Skritter !</h1>

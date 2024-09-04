@@ -13,6 +13,7 @@ $routes = [
     'profile' => ['Skritter_Controller', 'profile'], // display the user's profile
     'modifyUser' => ['Skritter_Controller', 'modifyUser'], // display the  modify user's informations pages
     'modifyAvatar' => ['Skritter_Controller', 'modifyAvatar'], // display the modify user's avatar
+    
 
     // form send
 
