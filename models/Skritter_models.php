@@ -1,6 +1,8 @@
 <?php
 require_once 'models/Skrito_Db_model.php';
 
+
+
 function skritoGetCleanPost()
 {
     $pseudo = isset($_POST["pseudo"]) ? filter_input(INPUT_POST, "pseudo", FILTER_SANITIZE_SPECIAL_CHARS) : '';

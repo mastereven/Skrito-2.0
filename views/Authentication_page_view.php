@@ -8,7 +8,7 @@ ob_start();
         <h1>Inscription</h1>
         <a href="index.php?action=logIn">J'ai déjà un compte</a>
     </div>
-    <form action="index.php?action=newSkritter" method="POST" class="formAuth">
+    <form action="index.php?action=registerSend" method="POST" class="formAuth">
         <label for="nom">Nom :</label>
         <input type="text" id="name" name="name" required><br><br>
 

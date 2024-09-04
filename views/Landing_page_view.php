@@ -14,8 +14,8 @@ ob_start();
                                         Deviens un <span class="blueText">SKRITTER</span> et partage tes talents gratuitement, grâce à un outil de création unique.
                                 </p>
                                 <div class="buttonSection">
-                                        <button id="authentificationButton">S'INSCRIRE</button>
-                                        <button id="connexionButton">J'ai déjà un compte</button>
+                                        <a href="index.php?action=register" id="authentificationButton">S'INSCRIRE</a>
+                                        <a href="index.php?action=logIn" id="connexionButton">J'ai déjà un compte</a>
                                 </div>
                         </div>
 

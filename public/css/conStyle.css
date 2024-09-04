@@ -1,0 +1,174 @@
+/* Style global */
+body {
+    background-image: url(../image/bg_connexion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: "ABeeZee", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Alignement au début de la page */
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3em;
+    /* Padding pour éviter que le contenu ne soit collé au haut */
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+    /* Ajustez selon vos besoins */
+    margin-bottom: 1em;
+}
+
+#connTitle {
+    color: white;
+    font-size: 24px;
+    /* Taille de police ajustée pour une meilleure lisibilité */
+    margin-bottom: 1em;
+    font-weight: 700;
+    /* Épaissir le texte pour le rendre plus visible */
+}
+
+.conForm {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* Alignement des éléments enfants à l'intérieur du formulaire */
+    justify-content: center;
+    background: #ffffff;
+    /* Fond blanc */
+    border-radius: 15px;
+    /* Coins arrondis */
+    padding: 2em;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+        -4px -4px 8px rgba(255, 255, 255, 0.9);
+    /* Effet neumorphique moins brillant */
+    max-width: 400px;
+    /* Largeur maximale ajustée pour une meilleure présentation */
+    margin: 1em auto;
+    /* Centrer le formulaire horizontalement */
+}
+
+.conFormArea {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* Assurer que les champs s'étendent correctement */
+    justify-content: center;
+    width: 100%;
+}
+
+.connInput {
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.connInput label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    /* Couleur de texte pour le label */
+    margin-bottom: 0.5em;
+}
+
+.connInput input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #e0e0e0;
+    /* Fond des champs de saisie pour l'effet neumorphique */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.9);
+    /* Effet neumorphique plus subtil */
+}
+
+button {
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #FFBB9E;
+    /* Couleur de fond du bouton pour correspondre au titre */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFD8C2;
+    /* Couleur du bouton au survol */
+}
+
+a {
+    color: #FFBB9E;
+    /* Couleur du lien pour correspondre au titre */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Souligner le lien au survol */
+}
+
+@media (max-width: 1024px) {
+    #connTitle {
+        font-size: 20px;
+        /* Taille de police réduite pour les écrans plus petits */
+    }
+
+    .conForm {
+        padding: 1.5em;
+        width: 90%;
+    }
+
+    .connInput input {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    #connTitle {
+        font-size: 18px;
+        /* Taille de police encore réduite pour les très petits écrans */
+    }
+
+    .conForm {
+        padding: 1em;
+        width: 95%;
+    }
+
+    .connInput input {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    a {
+        font-size: 0.8em;
+    }
+}
