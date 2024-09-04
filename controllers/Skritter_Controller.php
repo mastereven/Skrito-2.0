@@ -15,7 +15,7 @@ class Skritter_Controller
     {
         $title = "SKRITO - Inscription";
         $policeFiles = ['https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap'];
-        $cssFiles = ['public\css\formatPage.css', 'public\css\AuthStyle.css'];
+        $cssFiles = ['public\css\formatPage.css', 'public\css\authStyle.css'];
         $jsFiles = [''];
         require_once 'views/Authentication_page_view.php';
     }

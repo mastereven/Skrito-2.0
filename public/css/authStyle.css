@@ -1,0 +1,171 @@
+body {
+    background-image: url(../image/bg_connexion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: "ABeeZee", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+main.formAuthSkritter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3em;
+    box-sizing: border-box;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.logoContainer img {
+    width: 190px;
+    margin-bottom: 1em;
+}
+
+.logoContainer h1 {
+    color: white;
+    font-size: 22.8px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.logoContainer a {
+    color: #FF7F50;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.logoContainer a:hover {
+    text-decoration: underline;
+}
+
+.formAuth {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 2.85em;
+    box-shadow: 0 0 14.25px rgba(0, 0, 0, 0.2);
+    max-width: 570px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.formAuth label {
+    font-size: 0.95em;
+    color: #333;
+    margin-bottom: 0.475em;
+}
+
+.formAuth input {
+    width: 100%;
+    padding: 0.76em;
+    border: 1px solid #ccc;
+    border-radius: 7.6px;
+    font-size: 0.95em;
+    background: #e0e0e0;
+    box-shadow: inset 1.9px 1.9px 4.75px rgba(0, 0, 0, 0.1),
+        inset -1.9px -1.9px 4.75px rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.425em;
+}
+
+.formAuth input[type="submit"] {
+    width: 100%;
+    padding: 0.76em;
+    border: none;
+    border-radius: 7.6px;
+    font-size: 1.045em;
+    color: white;
+    background-color: #FF7F50;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formAuth input[type="submit"]:hover {
+    background-color: #FF6347;
+}
+
+/* Responsive Design */
+
+/* Pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 1024px) {
+    .logoContainer img {
+        width: 180px;
+    }
+
+    .logoContainer h1 {
+        font-size: 20px;
+    }
+
+    .logoContainer a {
+        font-size: 0.9em;
+    }
+
+    .formAuth {
+        padding: 2.5em;
+        width: 90%;
+    }
+
+    .formAuth label {
+        font-size: 0.9em;
+    }
+
+    .formAuth input {
+        padding: 0.7em;
+        font-size: 0.9em;
+    }
+
+    .formAuth input[type="submit"] {
+        padding: 0.7em;
+        font-size: 1em;
+    }
+}
+
+/* Pour les petits écrans (smartphones) */
+@media (max-width: 768px) {
+    .logoContainer img {
+        width: 160px;
+    }
+
+    .logoContainer h1 {
+        font-size: 18px;
+    }
+
+    .logoContainer a {
+        font-size: 0.85em;
+    }
+
+    .formAuth {
+        padding: 2em;
+        width: 95%;
+    }
+
+    .formAuth label {
+        font-size: 0.85em;
+    }
+
+    .formAuth input {
+        padding: 0.6em;
+        font-size: 0.85em;
+    }
+
+    .formAuth input[type="submit"] {
+        padding: 0.6em;
+        font-size: 0.9em;
+    }
+}
