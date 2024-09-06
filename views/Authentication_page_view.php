@@ -4,7 +4,9 @@ ob_start();
 
 <main class="formAuthSkritter">
     <div class="logoContainer">
-        <img src="public/image/Conn_logo.png" alt="Apprendre le dessin en ligne avec SKRITO">
+        <a href="index.php?action=Landing">
+            <img src="public/image/Conn_logo.png" alt="Skrito plateforme communautaire de dessin" class="logo">
+        </a>
         <h1>Inscription</h1>
         <a href="index.php?action=logIn">J'ai déjà un compte</a>
     </div>
