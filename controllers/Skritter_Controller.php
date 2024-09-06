@@ -1,6 +1,32 @@
 <?php
+require_once("models/Skritter_model.php");
 class Skritter_Controller
 {
+    private $SkritoDb;
+    private $Skrito_validator;
+    private $Skrito_sanitizer;
+    private $Skritter_Model;
+
+    public function __construct(){
+
+        $this->SkritoDb = dbConnect();
+        $this->Skrito_validator = new SkritoValidator();
+        $this->Skrito_sanitizer = new SkritoSanitize();
+        $this->Skritter_Model = new SkritoModel($this->SkritoDb);
+    }
+    private function getFormData(): array{
+        return [
+            'last_name' => $_POST['name'] ?? '',
+            'first_name' => $_POST['firstName'] ?? '',
+            'mail' => $_POST['mail'] ?? '',
+            'pseudo' => $_POST['pseudo'] ?? '',
+            'password' => $_POST['password'] ?? '',
+            'confirm_password' => $_POST['confirm_password'] ?? '',
+        ];
+    }
+
+    public
+
     public function skritoLanding()
     { // function to display the landing page
         $title = 'SKRITO';
