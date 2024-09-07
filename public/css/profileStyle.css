@@ -1,0 +1,86 @@
+body {
+    background: url('views/image/landing_page_background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    color: white;
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+.edit-profile {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.edit-profile:hover {
+    text-decoration: underline;
+}
+
+.username {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ff6f3f;
+}
+
+.user-info {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.user-email a {
+    color: #4ebef7;
+    text-decoration: none;
+}
+
+.user-email a:hover {
+    text-decoration: underline;
+}
+
+.edit-info-btn,
+.publish-tuto-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.edit-info-btn {
+    background-color: #ff6f3f;
+    color: white;
+}
+
+.edit-info-btn:hover {
+    background-color: #e65c2f;
+}
+
+.publish-tuto-btn {
+    background-color: #f7b84e;
+    color: white;
+}
+
+.publish-tuto-btn:hover {
+    background-color: #e6a53f;
+}

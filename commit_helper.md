@@ -1,4 +1,12 @@
 02/09/2024
+
+inscription terminé
+faire la connexion
+faire l'affichage des sessions
+faire la création de tuto
+faire la modif d'info
+
+02/09/2024
 -je commence a faire le reste des pages :
 j'ai fini la nav(non connecté)
 faire la nav connecté
