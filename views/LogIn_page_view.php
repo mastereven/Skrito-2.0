@@ -31,14 +31,10 @@ $errorsHandling = $errorsHandling ?? [];
                 Mot de passe :
                 <?= Validator::displayError('password', $errorsHandling) ?>
             </label>
-            <div class="password-container-fa-eye">
+            <div class="password-container">
                 <input type="password" name="password" id="password" class="<?= Validator::getErrorClass('password', $errorsHandling) ?>" value="<?= htmlspecialchars($password) ?>" required>
-                <button type="button" class="toggle-visibility" onclick="togglePasswordVisibility()">
-                    <i class="fa fa-eye"></i>
-                </button>
             </div>
         </div>
-
         <button type="submit">Se connecter</button>
     </form>
 </main>

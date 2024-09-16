@@ -1,7 +1,6 @@
 <?php
 ob_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,7 +14,7 @@ ob_start();
 <body>
     <div class="container">
         <div class="message">
-            <h1>Authentification réussie !</h1>
+            <h1>Authentification réussie, Bienvenue Skritter !</h1>
             <p>Vos données sont en transit. Vous allez être redirigé vers la page de connexion.</p>
             <div class="loading-container">
                 <div class="loading-bar"></div>
